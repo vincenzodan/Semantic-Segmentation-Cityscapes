@@ -37,7 +37,7 @@ The model is designed for **urban scene understanding**, distinguishing between 
 
 ## 📊 Results
 <center>
-   <img width="1250" height="281" alt="image" src="https://github.com/user-attachments/assets/cf8cc0ea-6a48-47ea-9d95-23f20fb7a9e2" />
+   <img width="1257" height="276" alt="image" src="https://github.com/user-attachments/assets/ea2993a6-078f-4294-a58d-a058d4d226a2" />
 </center>
 
 | Metric         | Value        |
@@ -83,6 +83,7 @@ The model is designed for **urban scene understanding**, distinguishing between 
   </div>
 </div>
 ---
+
 ## 📘 More Details
 Learn more about the project in the [full presentation](./Presentazione.pdf).
 
