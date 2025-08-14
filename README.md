@@ -51,7 +51,7 @@ The model is designed for **urban scene understanding**, distinguishing between 
 </center>
 
 <center>
-  <img width="1265" height="675" alt="image" src="https://github.com/user-attachments/assets/4cff606f-b857-478f-8485-1bf09e99175c" />
+  <img width="1271" height="708" alt="image" src="https://github.com/user-attachments/assets/f7f1cb92-57f8-40b6-ab64-436f2bf33b7a" />
 </center>
 
 ---
@@ -82,7 +82,6 @@ The model is designed for **urban scene understanding**, distinguishing between 
     </table>
   </div>
 </div>
----
 
 ## 📘 More Details
 Learn more about the project in the [full presentation](./Presentazione.pdf).
