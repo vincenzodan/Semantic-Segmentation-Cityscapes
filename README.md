@@ -4,10 +4,12 @@
 This project implements a **semantic segmentation pipeline** to classify each pixel of an image into predefined categories, using the **Cityscapes** dataset.  
 The model is designed for **urban scene understanding**, distinguishing between **road, cars, pedestrians, buildings, sky**, and other urban elements.
 
-## 🎯 Objectives
-- Accurately segment urban street scenes.  
-- Leverage deep learning architectures for pixel-wise classification.  
-- Achieve high IoU (Intersection over Union) and mIoU scores across classes.
+## 🎯 Tasks:
+   - Train U-Net from scratch  
+   - Train ASPP from scratch  
+   - Train ResNet from scratch  
+   - Fine-tune DeepLabv3+ on Cityscapes  
+   - Transfer learning on SUIM dataset
 
 ## 🗂 Dataset
 - **Name:** [Cityscapes Dataset](https://www.cityscapes-dataset.com/)  
@@ -24,9 +26,9 @@ The model is designed for **urban scene understanding**, distinguishing between 
 ## ⚙️ Model Pipeline
 1. **Data Loading:** Reading and preprocessing images and labels.  
 2. **Augmentation:** Random cropping, flipping, and normalization.  
-3. **Model Architecture:** U-Net  
+3. **Model Architectures:** U-Net, Res-Net, ASPP, DeepLabv3+ (tested separately)
 4. **Training:**  
-   - Loss: `CrossEntropyLoss` (weighted by class frequency)  
+   - Losses: `CrossEntropyLoss` (weighted by class frequency), `Focal Loss`, `Generalized Dice Loss`
    - Optimizer: Adam / SGD  
    - Scheduler: StepLR  
 5. **Evaluation:**  
@@ -34,55 +36,58 @@ The model is designed for **urban scene understanding**, distinguishing between 
    - Visualization of segmentation masks.  
 
 ## 📊 Results
+<center>
+   <img width="1250" height="281" alt="image" src="https://github.com/user-attachments/assets/cf8cc0ea-6a48-47ea-9d95-23f20fb7a9e2" />
+</center>
 
-| Metric         | Value  |
-|----------------|--------|
-| **Macro**      | 0.3584 |
-| **Micro**      | 0.8062 |
-| **Weighted**   | 0.8237 |
+| Metric         | Value        |
+|----------------|--------------|
+| **Macro**      | 0.4492       |
+| **Micro**      | 0.8209       |
+| **Weighted**   | 0.8345       |
 
 <center>
-  <img width="1266" height="708" alt="Screenshot 2025-08-14 154956" src="https://github.com/user-attachments/assets/89801256-5a2e-4b86-b3a2-f004b2f7038f" />
+  <img width="854" height="534" alt="image" src="https://github.com/user-attachments/assets/c98bc89e-4e5a-407a-bbec-0befc9763ab3" />
 </center>
 
 <center>
-  <img width="840" height="539" alt="Screenshot 2025-08-14 154911" src="https://github.com/user-attachments/assets/762e238c-f0a2-4c59-a4ff-b9f10227632e" />
+  <img width="1265" height="675" alt="image" src="https://github.com/user-attachments/assets/4cff606f-b857-478f-8485-1bf09e99175c" />
 </center>
 
 ---
 
-## 🏆 Best and Worst Classes
-
+## 🏆 Best and Worst Classes 
 <div style="text-align: center;">
   <div style="display: inline-block; margin-right: 100px; vertical-align: top;">
-    <h4>Top 5 Classes</h4>
+    <h4>Best Classes</h4>
     <table border="1">
-      <tr><th>Class</th><th>F1-score</th></tr>
-      <tr><td>road</td><td>0.97</td></tr>
-      <tr><td>sky</td><td>0.93</td></tr>
-      <tr><td>vegetation</td><td>0.91</td></tr>
-      <tr><td>building</td><td>0.90</td></tr>
-      <tr><td>car</td><td>0.89</td></tr>
+      <tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1-score</th></tr>
+      <tr><td>road</td><td>0.97</td><td>0.97</td><td>0.97</td></tr>
+      <tr><td>car</td><td>0.92</td><td>0.95</td><td>0.94</td></tr>
+      <tr><td>sky</td><td>0.90</td><td>0.94</td><td>0.92</td></tr>
+      <tr><td>building</td><td>0.88</td><td>0.94</td><td>0.91</td></tr>
+      <tr><td>vegetation</td><td>0.92</td><td>0.89</td><td>0.91</td></tr>
     </table>
   </div>
 
   <div style="display: inline-block; margin-left: 100px; vertical-align: top;">
-    <h4>Bottom 5 Classes</h4>
+    <h4>Worst Classes</h4>
     <table border="1">
-      <tr><th>Class</th><th>F1-score</th></tr>
-      <tr><td>rider</td><td>0.00</td></tr>
-      <tr><td>bus</td><td>0.01</td></tr>
-      <tr><td>motorcycle</td><td>0.02</td></tr>
-      <tr><td>truck</td><td>0.11</td></tr>
-      <tr><td>train</td><td>0.17</td></tr>
+      <tr><th>Class</th><th>Precision</th><th>Recall</th><th>F1-score</th></tr>
+      <tr><td>wall</td><td>0.60</td><td>0.29</td><td>0.39</td></tr>
+      <tr><td>fence</td><td>0.43</td><td>0.44</td><td>0.44</td></tr>
+      <tr><td>pole</td><td>0.60</td><td>0.39</td><td>0.47</td></tr>
+      <tr><td>train</td><td>0.81</td><td>0.36</td><td>0.50</td></tr>
+      <tr><td>traffic sign</td><td>0.74</td><td>0.49</td><td>0.59</td></tr>
     </table>
   </div>
 </div>
-
+---
 ## 📘 More Details
 Learn more about the project in the [full presentation](./Presentazione.pdf).
 
 ---
+
 ## 👥 Contributors
 
 - [@Vincenzo D'Angelo](https://github.com/vincenzodan)
