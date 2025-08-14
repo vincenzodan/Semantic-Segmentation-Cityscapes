@@ -41,13 +41,13 @@ The model is designed for **urban scene understanding**, distinguishing between 
 | **Micro**      | 0.8062 |
 | **Weighted**   | 0.8237 |
 
-<div style="text-align: center;">
+<center>
   <img width="1266" height="708" alt="Screenshot 2025-08-14 154956" src="https://github.com/user-attachments/assets/89801256-5a2e-4b86-b3a2-f004b2f7038f" />
-</div>
+</center>
 
-<div style="text-align: center;">
+<center>
   <img width="840" height="539" alt="Screenshot 2025-08-14 154911" src="https://github.com/user-attachments/assets/762e238c-f0a2-4c59-a4ff-b9f10227632e" />
-</div>
+</center>
 
 ---
 
