@@ -35,17 +35,16 @@ The model is designed for **urban scene understanding**, distinguishing between 
    - Metrics: mIoU, Precision, Recall, F1. 
    - Visualization of segmentation masks.  
 
-## 📊 Results
-<center>
-   <img width="1257" height="276" alt="image" src="https://github.com/user-attachments/assets/ea2993a6-078f-4294-a58d-a058d4d226a2" />
-</center>
-
+## 📊 Best Results
 | Metric         | Value        |
 |----------------|--------------|
 | **Macro**      | 0.4492       |
 | **Micro**      | 0.8209       |
 | **Weighted**   | 0.8345       |
 
+<center>
+   <img width="1257" height="276" alt="image" src="https://github.com/user-attachments/assets/ea2993a6-078f-4294-a58d-a058d4d226a2" />
+</center>
 <center>
   <img width="854" height="534" alt="image" src="https://github.com/user-attachments/assets/c98bc89e-4e5a-407a-bbec-0befc9763ab3" />
 </center>
