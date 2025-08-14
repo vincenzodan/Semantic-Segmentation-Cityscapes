@@ -5,11 +5,11 @@ This project implements a **semantic segmentation pipeline** to classify each pi
 The model is designed for **urban scene understanding**, distinguishing between **road, cars, pedestrians, buildings, sky**, and other urban elements.
 
 ## 🎯 Tasks:
-   - Train U-Net from scratch  
-   - Train ASPP from scratch  
-   - Train ResNet from scratch  
-   - Fine-tune DeepLabv3+ on Cityscapes  
-   - Transfer learning on SUIM dataset
+   - [Train U-Net from scratch](./semantic_segmentation_cityscapes_19_classes_UNet.ipynb)
+   - [Train ResNet from scratch](./semantic_segmentation_cityscapes_19_classes_ResNet.ipynb)
+   - [Train ASPP from scratch](./semantic_segmentation_cityscapes_19_classes_ASPP.ipynb)
+   - [Fine-tune DeepLabv3+ on Cityscapes](./semantic_segmentation_cityscapes_19_classes_Deeplabv3.ipynb)
+   - [Transfer learning on SUIM dataset](./semantic_segmentation_SUIM.ipynb)
 
 ## 🗂 Dataset
 - **Name:** [Cityscapes Dataset](https://www.cityscapes-dataset.com/)  
